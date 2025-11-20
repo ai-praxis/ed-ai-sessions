@@ -1,0 +1,23 @@
+---
+title: "Blog"
+subtitle: "Updates, reflections, and insights from the AI Session Preparation Project"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: true
+---
+
+Project updates, reflections, and insights from the **AI Session Preparation Project**. Posts here focus on:
+
+- Development progress and milestones
+- Design decisions and their rationale
+- User feedback and lessons learned
+- Evaluation results and findings
+- Practical considerations for implementation
+
+For broader reflections on AI in higher education, see the [AI-Ed Research Hub](https://ai-praxis.github.io/ed-ai).

@@ -1,0 +1,50 @@
+---
+title: "Project Research"
+subtitle: "Research materials specific to the AI Session Preparation Project"
+listing:
+  contents:
+    - "*.qmd"
+    - "*.md"
+  type: default
+  sort: "date desc"
+  fields: [title, description, date]
+---
+
+## Overview
+
+This section contains research materials specific to the **AI Session Preparation Project**, including:
+
+- Literature reviews focused on tutoring and session preparation
+- Design documents and conceptual frameworks
+- Data analysis and evaluation results
+- Methodological notes and protocols
+
+## Project-Specific Focus
+
+This section focuses specifically on:
+
+- Tutoring preparation practices and challenges
+- AI tools designed for educational support contexts
+- Evaluation of session preparation interventions
+- User studies with tutors and support professionals
+
+For general background on AI in higher education, see the [AI-Ed Research Hub](https://ai-praxis.github.io/ed-ai).
+
+## Using These Materials
+
+These research materials inform the design, implementation, and evaluation of AI-assisted preparation tools developed in this project.
+
+## Contributing
+
+As this project develops, additional research materials will be added here. Project team members can contribute by:
+
+- Adding literature reviews on relevant topics
+- Documenting design decisions and rationale
+- Sharing evaluation protocols and results
+- Recording methodological notes and lessons learned
+
+---
+
+## Research Materials
+
+*Research documents will appear below as they are added to the project.*

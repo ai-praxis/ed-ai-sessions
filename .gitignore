@@ -1,0 +1,21 @@
+# Ignore build outputs from performing a nix-build or `nix build` command
+result
+result-*
+
+# Ignore automatically generated direnv output
+.direnv
+.direnv/
+.envrc
+
+# macOS
+.DS_Store
+
+# Quarto
+_site/
+.quarto/
+/.quarto/
+_extensions/
+
+# AI coding assistants
+.aider*
+CLAUDE.local.md

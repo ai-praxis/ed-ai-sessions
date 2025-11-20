@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📋 Project Tracking
+    url: https://github.com/francojc/its4ll/blob/main/_specs/project_tracking.md
+    about: View the complete project tracking system and current sprint status
+  - name: 📖 Project Documentation
+    url: https://github.com/francojc/its4ll/tree/main/_specs
+    about: Browse all project specifications, planning documents, and workflows
+  - name: 🤝 GitHub Workflow Guide
+    url: https://github.com/francojc/its4ll/blob/main/_specs/github_workflow_integration.md
+    about: Learn how to use GitHub issues and milestones with the ITS4LL project

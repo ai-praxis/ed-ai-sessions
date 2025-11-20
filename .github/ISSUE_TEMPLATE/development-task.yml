@@ -1,0 +1,95 @@
+name: 🔧 Development Task
+description: Technical development, implementation, and infrastructure tasks
+title: "[DEV-XXX]: "
+labels: ["development", "sprint"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing to ITS4LL! Please fill out this development task template.
+
+  - type: input
+    id: task-id
+    attributes:
+      label: Task ID
+      description: Task identifier from project_tracking.md (e.g., DEV-001, DEV-002)
+      placeholder: DEV-XXX
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Clear description of the development task
+      placeholder: Describe what needs to be built, implemented, or configured
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Specific, measurable criteria for task completion
+      placeholder: |
+        - [ ] Criterion 1
+        - [ ] Criterion 2
+        - [ ] Criterion 3
+    validations:
+      required: true
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: Any blocking issues, external dependencies, or prerequisites
+      placeholder: |
+        - Blocks: #issue-number - Description
+        - Blocked by: #issue-number - Description
+        - Requires: External dependency description
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: Task priority level
+      options:
+        - High - Critical path, blocking other work
+        - Medium - Important but not blocking
+        - Low - Nice to have, can be deferred
+    validations:
+      required: true
+
+  - type: input
+    id: estimate
+    attributes:
+      label: Time Estimate
+      description: Estimated effort in hours or days
+      placeholder: "8-12 hours"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: task-type
+    attributes:
+      label: Task Type
+      description: Category of development work
+      options:
+        - Infrastructure - Deployment, DevOps, environment setup
+        - Backend - API, database, core services
+        - Frontend - UI, user interface components
+        - AI/ML - Model training, fine-tuning, RAG implementation
+        - Integration - System integration, third-party services
+        - Testing - Unit tests, integration tests, validation
+
+  - type: checkboxes
+    id: phase
+    attributes:
+      label: Project Phase
+      description: Which project phase does this task belong to?
+      options:
+        - label: Phase 1 - Foundation
+        - label: Phase 2 - Preparation  
+        - label: Phase 3 - Data Collection
+        - label: Phase 4 - Analysis
+        - label: Phase 5 - Dissemination

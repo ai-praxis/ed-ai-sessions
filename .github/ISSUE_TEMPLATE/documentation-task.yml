@@ -1,0 +1,125 @@
+name: 📖 Documentation Task
+description: Documentation, technical writing, and knowledge management
+title: "[DOC-XXX]: "
+labels: ["documentation", "sprint"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for documentation tasks including technical writing, user guides, and knowledge management.
+
+  - type: input
+    id: task-id
+    attributes:
+      label: Task ID
+      description: Task identifier from project_tracking.md (e.g., DOC-001, DOC-002)
+      placeholder: DOC-XXX
+    validations:
+      required: true
+
+  - type: dropdown
+    id: doc-type
+    attributes:
+      label: Documentation Type
+      description: What type of documentation is this?
+      options:
+        - Technical Documentation - API docs, architecture, setup guides
+        - User Documentation - User guides, tutorials, help content
+        - Research Documentation - Methodology, analysis, reports
+        - Process Documentation - Workflows, procedures, standards
+        - Project Documentation - Planning, specifications, tracking
+    validations:
+      required: true
+
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Purpose and Audience
+      description: What is the purpose of this documentation and who is the target audience?
+      placeholder: |
+        Purpose: Why is this documentation needed?
+        Audience: Who will use this documentation?
+        Context: How does this fit into the overall project?
+    validations:
+      required: true
+
+  - type: textarea
+    id: content-outline
+    attributes:
+      label: Content Outline
+      description: What topics/sections will be covered?
+      placeholder: |
+        1. Section/Topic 1
+        2. Section/Topic 2
+        3. Section/Topic 3
+        - Key points to address
+        - Important details to include
+    validations:
+      required: true
+
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: Deliverables
+      description: What specific documentation outputs will be created?
+      placeholder: |
+        - [ ] Document/file name and location
+        - [ ] Specific format (Markdown, PDF, etc.)
+        - [ ] Integration with existing docs
+        - [ ] Review and approval process
+    validations:
+      required: true
+
+  - type: input
+    id: deadline
+    attributes:
+      label: Target Completion Date
+      description: When should this documentation be completed?
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: true
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies and Sources
+      description: What information sources, SMEs, or other dependencies are needed?
+      placeholder: |
+        - Technical specifications from: [source]
+        - Input needed from: [person/team]
+        - Depends on completion of: #issue-number
+        - Reference materials: [list]
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: Documentation priority level
+      options:
+        - High - Critical for project progress or external requirements
+        - Medium - Important for project success
+        - Low - Nice to have, can be deferred
+
+  - type: checkboxes
+    id: integration
+    attributes:
+      label: Integration Requirements
+      description: How should this documentation integrate with existing resources?
+      options:
+        - label: Add to project website/docs site
+        - label: Include in repository README
+        - label: Link from project_tracking.md
+        - label: Integration with code comments/docstrings
+        - label: Standalone document
+        - label: Presentation/slides format needed
+
+  - type: textarea
+    id: maintenance
+    attributes:
+      label: Maintenance Plan
+      description: How will this documentation be kept up-to-date?
+      placeholder: |
+        - Update frequency: [how often]
+        - Responsibility: [who maintains it]
+        - Review cycle: [when and how reviewed]
+        - Version control approach

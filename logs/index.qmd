@@ -1,0 +1,19 @@
+---
+title: "Logs"
+subtitle: "Development logs for the AI Session Preparation Project"
+listing:
+  contents: "*.md"
+  type: default
+  sort: "date desc"
+  fields: [date, title, description]
+---
+
+Development logs documenting progress, decisions, and insights for the **AI Session Preparation Project**.
+
+These logs capture:
+
+- Development milestones and progress updates
+- Design decisions and their rationale
+- Technical implementation notes
+- User testing feedback and observations
+- Challenges encountered and solutions explored

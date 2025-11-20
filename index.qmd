@@ -1,0 +1,94 @@
+---
+title: "AI Session Preparation Project"
+subtitle: "AI-assisted session preparation for tutoring and academic support"
+---
+
+## Introduction
+
+The **AI Session Preparation Project** (ed-ai-sessions) investigates how artificial intelligence can enhance the work of tutors and academic support professionals without replacing their expertise or judgment. This project focuses specifically on the preparation phase of tutoring sessions, exploring AI tools that help educators prepare more efficiently and effectively.
+
+## Research Questions
+
+This project addresses several key questions:
+
+1. **Effectiveness**: How can AI tools improve the quality and efficiency of session preparation?
+2. **Usability**: What design principles make AI preparation tools intuitive and useful for practitioners?
+3. **Integration**: How can AI tools fit seamlessly into existing tutoring workflows?
+4. **Ethics**: How do we ensure AI assistance maintains student privacy, tutor agency, and educational integrity?
+
+## Target Users
+
+This project serves:
+
+- **Individual tutors** in writing centers, language labs, and academic support centers
+- **Peer tutors** in undergraduate and graduate programs
+- **Academic support professionals** coordinating tutoring services
+- **Faculty** offering office hours and individual consultations
+
+## Project Scope
+
+### In Scope
+
+- Analyzing student work to identify learning challenges
+- Generating relevant practice materials and examples
+- Suggesting evidence-based pedagogical strategies
+- Streamlining administrative preparation tasks
+- Documenting preparation decisions and session plans
+
+### Out of Scope
+
+- Real-time AI assistance during sessions (see related project: ed-ai-its)
+- Automated grading or assessment
+- Student-facing AI tools without tutor mediation
+- Replacement of tutor decision-making
+
+## Methodology
+
+This project employs a **design-based research approach**:
+
+1. **Literature Review**: Synthesize existing research on tutoring, academic support, and AI in education
+2. **Needs Assessment**: Interview tutors and support professionals about current preparation practices
+3. **Prototype Development**: Build and test AI-assisted preparation tools
+4. **Evaluation**: Assess tool effectiveness through user studies and learning outcome analysis
+5. **Iteration**: Refine tools based on feedback and evaluation results
+
+## Timeline
+
+- **Phase 1** (Current): Literature review and needs assessment
+- **Phase 2**: Initial prototype development
+- **Phase 3**: Pilot testing with select tutoring programs
+- **Phase 4**: Evaluation and refinement
+- **Phase 5**: Documentation and dissemination
+
+## Expected Outcomes
+
+This project aims to produce:
+
+1. **Research Publications**: Findings on AI-assisted preparation in tutoring contexts
+2. **Open-source Tools**: Prototype AI preparation assistants for tutoring programs
+3. **Best Practice Guidelines**: Recommendations for ethical, effective AI integration
+4. **Training Materials**: Resources for onboarding tutors to AI-assisted workflows
+
+## Collaboration Opportunities
+
+We welcome collaboration from:
+
+- Tutoring centers interested in pilot testing
+- Researchers studying tutoring effectiveness or AI in education
+- Developers interested in educational AI tool design
+- Funders supporting innovative approaches to student success
+
+## Project Team
+
+*To be updated as team members join*
+
+## Contact
+
+For inquiries about collaboration, please open an issue on our [GitHub repository](https://github.com/ai-praxis/ed-ai-sessions) or contact the AI-PRAXIS organization.
+
+## Related Projects
+
+This project is part of the AI-PRAXIS organization's broader work on AI in higher education:
+
+- **ed-ai-its**: Intelligent tutoring systems for language learning
+- **ed-ai**: General research hub on AI applications in higher education

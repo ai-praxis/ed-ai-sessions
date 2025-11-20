@@ -1,0 +1,109 @@
+name: 📚 Research Task
+description: Research activities, literature review, and academic work
+title: "[RESEARCH-XXX]: "
+labels: ["research", "sprint"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for research-related tasks including literature review, data analysis, and academic activities.
+
+  - type: input
+    id: task-id
+    attributes:
+      label: Task ID
+      description: Task identifier from project_tracking.md (e.g., RESEARCH-001, LIT-001)
+      placeholder: RESEARCH-XXX
+    validations:
+      required: true
+
+  - type: textarea
+    id: research-question
+    attributes:
+      label: Research Question/Objective
+      description: What research question or objective does this task address?
+      placeholder: Clearly state the research question or objective this task will accomplish
+    validations:
+      required: true
+
+  - type: textarea
+    id: methodology
+    attributes:
+      label: Research Methodology
+      description: How will this research be conducted?
+      placeholder: |
+        - Data sources to be used
+        - Analysis methods
+        - Search strategies
+        - Evaluation criteria
+    validations:
+      required: true
+
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: Expected Deliverables
+      description: What specific outputs will be produced?
+      placeholder: |
+        - [ ] Literature review document
+        - [ ] Data analysis report
+        - [ ] Annotated bibliography
+        - [ ] Framework/model documentation
+    validations:
+      required: true
+
+  - type: textarea
+    id: success-criteria
+    attributes:
+      label: Success Criteria
+      description: How will you know this research task is complete and successful?
+      placeholder: |
+        - [ ] Minimum number of sources reviewed
+        - [ ] Specific insights identified
+        - [ ] Documentation completed
+        - [ ] Peer review/validation obtained
+
+  - type: dropdown
+    id: research-type
+    attributes:
+      label: Research Type
+      description: Category of research work
+      options:
+        - Literature Review - Systematic review of existing research
+        - Data Analysis - Statistical or qualitative analysis
+        - Framework Development - Theoretical or methodological frameworks
+        - Evaluation Design - Assessment and measurement planning
+        - Stakeholder Research - Interviews, surveys, user research
+        - Theoretical Foundation - Conceptual groundwork
+
+  - type: input
+    id: timeline
+    attributes:
+      label: Timeline
+      description: Expected duration and key milestones
+      placeholder: "2-3 weeks, draft by [date], final by [date]"
+    validations:
+      required: true
+
+  - type: textarea
+    id: resources-needed
+    attributes:
+      label: Resources Needed
+      description: What resources, access, or support is required?
+      placeholder: |
+        - Database access (e.g., academic databases)
+        - Software/tools required
+        - Collaboration or consultation needs
+        - Institutional approvals
+
+  - type: checkboxes
+    id: call-framework
+    attributes:
+      label: CALL Framework Phase
+      description: Which CALL research framework phase does this align with?
+      options:
+        - label: Foundation (30%) - Literature review, theoretical framework
+        - label: Preparation (20%) - Methodology, ethics, validation
+        - label: Data Collection (25%) - Empirical research, pilot study
+        - label: Analysis (15%) - Statistical analysis, interpretation
+        - label: Dissemination (10%) - Publication, presentation, impact

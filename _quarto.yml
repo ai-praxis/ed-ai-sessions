@@ -1,0 +1,51 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "AI Session Preparation Project"
+  description: "Using AI to enhance preparation for tutoring and educational support sessions"
+
+  navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Research"
+        href: research/
+      - text: "Blog"
+        href: blog/
+      - text: "Logs"
+        href: logs/
+    right:
+      - icon: github
+        href: https://github.com/ai-praxis/ed-ai-sessions
+
+  sidebar:
+    - title: "Research"
+      contents:
+        - research/
+    - title: "Blog"
+      contents:
+        - blog/
+    - title: "Logs"
+      contents:
+        - logs/
+
+  page-footer:
+    left: "Part of [AI-PRAXIS](https://github.com/ai-praxis)"
+    center: "Background resources: [AI-Ed Research Hub](https://ai-praxis.github.io/ed-ai)"
+
+format:
+  html:
+    theme: cosmo
+    respect-user-color-scheme: true
+    toc: true
+    number-sections: true
+    mermaid:
+      theme: dark
+
+# filters: [highlight, fontawesome]
+# from: markdown+mark # added for highlight extension
+
+execute:
+  freeze: auto

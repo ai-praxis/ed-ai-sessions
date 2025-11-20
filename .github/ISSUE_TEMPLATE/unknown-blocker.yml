@@ -1,0 +1,110 @@
+name: ❓ Unknown/Blocker
+description: Unknowns, blockers, and issues requiring investigation
+title: "[UNKNOWN]: "
+labels: ["unknown", "sprint"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to track unknowns, blockers, and issues that require investigation before work can proceed.
+
+  - type: textarea
+    id: unknown-description
+    attributes:
+      label: Unknown/Blocker Description
+      description: What is unclear, blocking progress, or needs investigation?
+      placeholder: Clearly describe what is unknown or blocking progress
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact on Project
+      description: How does this unknown/blocker affect the project timeline or deliverables?
+      placeholder: |
+        - Which tasks/sprints are affected?
+        - What work is currently blocked?
+        - What are the potential consequences?
+    validations:
+      required: true
+
+  - type: textarea
+    id: investigation-plan
+    attributes:
+      label: Investigation Plan
+      description: What steps will be taken to resolve this unknown?
+      placeholder: |
+        - [ ] Research/investigation step 1
+        - [ ] Meeting/consultation with [who]
+        - [ ] Testing/validation approach
+        - [ ] Documentation/decision required
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How urgent is resolving this unknown?
+      options:
+        - Critical - Blocks critical path, needs immediate attention
+        - High - Blocks important work, needs resolution this sprint
+        - Medium - Affects planning, needs resolution soon
+        - Low - Nice to know, can be addressed later
+    validations:
+      required: true
+
+  - type: input
+    id: deadline
+    attributes:
+      label: Decision Deadline
+      description: When does this need to be resolved?
+      placeholder: "Date by which decision/resolution is needed"
+    validations:
+      required: true
+
+  - type: textarea
+    id: related-tasks
+    attributes:
+      label: Related Tasks/Issues
+      description: Which issues or tasks are affected by this unknown?
+      placeholder: |
+        - #issue-number - How it's affected
+        - Task from project_tracking.md - Impact description
+
+  - type: dropdown
+    id: unknown-type
+    attributes:
+      label: Type of Unknown
+      description: What category does this unknown fall into?
+      options:
+        - Technical - Technology choices, implementation approaches
+        - Research - Research methodology, data sources
+        - Infrastructure - HPC resources, deployment options
+        - External - IRB approval, stakeholder decisions
+        - Requirements - Unclear specifications or scope
+        - Risk - Potential risks that need mitigation planning
+
+  - type: textarea
+    id: potential-solutions
+    attributes:
+      label: Potential Solutions/Options
+      description: What are possible approaches or solutions being considered?
+      placeholder: |
+        Option A: [Description, pros/cons]
+        Option B: [Description, pros/cons]
+        Option C: [Description, pros/cons]
+
+  - type: checkboxes
+    id: help-needed
+    attributes:
+      label: Help/Consultation Needed
+      description: What kind of external help or consultation is required?
+      options:
+        - label: HPC team consultation
+        - label: IRB/ethics consultation
+        - label: Faculty/supervisor guidance
+        - label: Technical expert consultation
+        - label: Literature/research guidance
+        - label: No external help needed
