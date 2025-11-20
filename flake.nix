@@ -1,5 +1,5 @@
 {
-  description = "Nix flake for ITS4LL development with Python, R, and Quarto";
+  description = "Nix flake development with Python, R, and Quarto";
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     flake-utils.url = "github:numtide/flake-utils";
@@ -82,7 +82,7 @@
 
         # Environment variables
         shellHook = ''
-          echo "🚀 ITS4LL Development Environment"
+          echo "🚀 Development Environment"
           echo "📊 Python: $(python --version)"
           echo "📈 R: $(R --version | head -1)"
           echo "📝 Quarto: $(quarto --version)"
