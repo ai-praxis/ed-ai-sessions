@@ -10,6 +10,7 @@ listing:
   filter-ui: false
 page-layout: full
 title-block-banner: true
+bibliography: ../ed-ai.bib
 ---
 
 Project updates, reflections, and insights from the **AI Session Preparation Project**. Posts here focus on:

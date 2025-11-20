@@ -1,5 +1,5 @@
 {
-  description = "Nix flake for ed-ai hub with Python, R, and Quarto";
+  description = "Nix flake for ITS4LL development with Python, R, and Quarto";
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     flake-utils.url = "github:numtide/flake-utils";
@@ -13,7 +13,7 @@
     flake-utils.lib.eachDefaultSystem (system: let
       pkgs = import nixpkgs {inherit system;};
 
-      # Base packages for research documentation
+      # Base packages
       corePackages = with pkgs; [
         R
         curl
@@ -25,32 +25,49 @@
         wget
       ];
 
-      # Essential Python packages for data analysis and notebooks
       pyPackages = with pkgs.python3Packages; [
+        # Core development tools
         pip
         setuptools
         wheel
+        # Essential ML/AI packages for LLM work
+        torch
+        transformers
+        datasets
+        huggingface-hub
+        # Data science essentials
         numpy
         pandas
         matplotlib
+        # Development tools
         jupyter
         ipython
+        pytest
+        # Web frameworks for tutoring interface
+        fastapi
+        uvicorn
+        # Utilities
         requests
+        tqdm
       ];
 
-      # R packages for data analysis and reporting
       rPackages = with pkgs.rPackages; [
+        # Core development
         devtools
         knitr
         rmarkdown
+        # Essential tidyverse for data analysis
         tidyverse
         dplyr
         ggplot2
         readr
+        # Statistical packages for evaluation
         broom
+        # Testing
+        testthat
       ];
 
-      # TeX packages for PDF generation
+      # TeX packages
       texlivePackages = with pkgs.texlive; [
         (combine {
           inherit scheme-small;
@@ -65,12 +82,15 @@
 
         # Environment variables
         shellHook = ''
-          echo "🎓 ed-ai Hub Development Environment"
+          echo "🚀 ITS4LL Development Environment"
           echo "📊 Python: $(python --version)"
           echo "📈 R: $(R --version | head -1)"
           echo "📝 Quarto: $(quarto --version)"
           echo ""
-          echo "Environment ready for AI-in-education research documentation!"
+          echo "Environment ready for AI/ML research with Python, R, and Quarto!"
+
+          # Set up Python environment
+          export PYTHONPATH="$PWD/code/src:$PYTHONPATH"
 
           # Set up R environment
           export R_LIBS_USER="$PWD/R/Library"
